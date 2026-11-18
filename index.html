@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTTP Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HTTP Generator</h1>
+    <p class="sub">Sends <code>fetch()</code> requests to httpbin.org and shows each request and response.</p>
+  </header>
+
+  <section class="controls">
+    <button id="btn200" class="ok">http 200</button>
+    <button id="btn500" class="err">http 500</button>
+    <button id="btnLoop" class="loop">loop</button>
+    <button id="btnClear" class="ghost" title="Clear log">clear</button>
+  </section>
+
+  <div id="status" class="status">Idle</div>
+
+  <main id="log"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
